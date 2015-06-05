@@ -1,0 +1,94 @@
+[info] RegisterSpec:
+[info] the register
+[info] - should report twenty-four people
+[info] - should say that Dave is the oldest *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+[info]   at people.PeopleRegister.oldestPerson(PeopleRegisterSpec.scala:78)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$2.apply$mcV$sp(PeopleRegisterSpec.scala:43)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$2.apply(PeopleRegisterSpec.scala:43)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$2.apply(PeopleRegisterSpec.scala:43)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - should say that Tom is the commonest name *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+[info]   at people.PeopleRegister.commonestName(PeopleRegisterSpec.scala:80)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$3.apply$mcV$sp(PeopleRegisterSpec.scala:47)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(PeopleRegisterSpec.scala:47)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(PeopleRegisterSpec.scala:47)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - should say that the youngest Peter is 27 years old *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+[info]   at people.PeopleRegister.youngestCalled(PeopleRegisterSpec.scala:82)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$4.apply$mcV$sp(PeopleRegisterSpec.scala:51)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$4.apply(PeopleRegisterSpec.scala:51)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$4.apply(PeopleRegisterSpec.scala:51)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - should report eight children *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+[info]   at people.PeopleRegister.countOfChildren(PeopleRegisterSpec.scala:84)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$5.apply$mcV$sp(PeopleRegisterSpec.scala:55)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$5.apply(PeopleRegisterSpec.scala:55)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$5.apply(PeopleRegisterSpec.scala:55)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - should report an adult-to-child ratio of 2 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+[info]   at people.PeopleRegister.adultToChildRatio(PeopleRegisterSpec.scala:86)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$6.apply$mcV$sp(PeopleRegisterSpec.scala:59)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$6.apply(PeopleRegisterSpec.scala:59)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$6.apply(PeopleRegisterSpec.scala:59)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - should calculate the average age *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+[info]   at people.PeopleRegister.averageAge(PeopleRegisterSpec.scala:88)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$7.apply$mcV$sp(PeopleRegisterSpec.scala:63)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$7.apply(PeopleRegisterSpec.scala:63)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$7.apply(PeopleRegisterSpec.scala:63)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - should calculate the median age *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+[info]   at people.PeopleRegister.medianAge(PeopleRegisterSpec.scala:90)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$8.apply$mcV$sp(PeopleRegisterSpec.scala:67)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$8.apply(PeopleRegisterSpec.scala:67)
+[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$8.apply(PeopleRegisterSpec.scala:67)
+[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...

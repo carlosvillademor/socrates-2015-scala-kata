@@ -2,19 +2,7 @@
 [info] the register
 [info] - should report twenty-four people
 [info] - should say that Dave is the oldest
-[info] - should say that Tom is the commonest name *** FAILED ***
-[info]   scala.NotImplementedError: an implementation is missing
-[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-[info]   at people.PeopleRegister.commonestName(PeopleRegisterSpec.scala:80)
-[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$3.apply$mcV$sp(PeopleRegisterSpec.scala:47)
-[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(PeopleRegisterSpec.scala:47)
-[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(PeopleRegisterSpec.scala:47)
-[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
-[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
-[info]   ...
+[info] - should say that Tom is the commonest name
 [info] - should say that the youngest Peter is 27 years old *** FAILED ***
 [info]   scala.NotImplementedError: an implementation is missing
 [info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)

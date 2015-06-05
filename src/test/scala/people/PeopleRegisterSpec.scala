@@ -77,7 +77,7 @@ class PeopleRegister(people: Seq[Person]) {
   
   def oldestPerson(): Person = people.maxBy(_.age)
   
-  def commonestName(): String = ???
+  def commonestName(): String = people.groupBy(_.name).mapValues(_.size).maxBy(_._2)._1
   
   def youngestCalled(sought: String): Option[Int] = ???
   

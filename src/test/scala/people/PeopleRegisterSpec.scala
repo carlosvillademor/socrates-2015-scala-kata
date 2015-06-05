@@ -75,7 +75,7 @@ class PeopleRegister(people: Seq[Person]) {
   
   def count(): Int = people.size
   
-  def oldestPerson(): Person = ???
+  def oldestPerson(): Person = people.maxBy(_.age)
   
   def commonestName(): String = ???
   

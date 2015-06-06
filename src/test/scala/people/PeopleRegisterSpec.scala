@@ -51,6 +51,10 @@ Wally 28
       register.youngestCalled("Peter") should be(Some(27))
     }
     
+    it("should say that the youngest Carlos is not fount") {
+      register.youngestCalled("Carlos") should be(None)
+    }
+
     it("should report eight children") {
       register.countOfChildren should be(8)
     }
@@ -80,7 +84,8 @@ class PeopleRegister(people: Seq[Person]) {
   def commonestName(): String = people.groupBy(_.name).mapValues(_.size).maxBy(_._2)._1
   
   def youngestCalled(sought: String): Option[Int] = people.filter(_.name == sought) match {
-    case Seq(name, age) => Option(Seq(name, age).minBy(_.age).age)
+    case Nil => None
+    case peopleByName => Option(peopleByName.minBy(_.age).age)
   }
   
   def countOfChildren(): Int = ???

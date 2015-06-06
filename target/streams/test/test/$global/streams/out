@@ -1,8 +1,8 @@
-[debug] Running TaskDef(people.RegisterSpec, org.scalatest.tools.Framework$$anon$1@4fba76b9, false, [SuiteSelector])
-[info] Run completed in 186 milliseconds.
-[info] Total number of tests run: 8
+[debug] Running TaskDef(people.RegisterSpec, org.scalatest.tools.Framework$$anon$1@208f812e, false, [SuiteSelector])
+[info] Run completed in 199 milliseconds.
+[info] Total number of tests run: 9
 [info] Suites: completed 1, aborted 0
-[info] Tests: succeeded 4, failed 4, canceled 0, ignored 0, pending 0
+[info] Tests: succeeded 5, failed 4, canceled 0, ignored 0, pending 0
 [info] *** 4 TESTS FAILED ***
 [error] Failed tests:
 [error] 	people.RegisterSpec

@@ -90,11 +90,11 @@ class PeopleRegister(people: Seq[Person]) {
   
   def countOfChildren(): Int = people.filter(_.age<=18).size
   
-  def adultToChildRatio(): Float = ???
+  def adultToChildRatio(): Float = people.filter(_.age>=18).size/people.filter(_.age<=18).size
   
-  def averageAge(): Int = ???
-  
-  def medianAge(): Double = ??? 
+  def averageAge(): Int = people.map(person => person.age).sum/people.size
+
+  def medianAge(): Double = ???
   
 }
 

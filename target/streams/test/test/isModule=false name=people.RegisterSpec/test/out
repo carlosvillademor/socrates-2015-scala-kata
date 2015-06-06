@@ -6,32 +6,8 @@
 [info] - should say that the youngest Peter is 27 years old
 [info] - should say that the youngest Carlos is not fount
 [info] - should report eight children
-[info] - should report an adult-to-child ratio of 2 *** FAILED ***
-[info]   scala.NotImplementedError: an implementation is missing
-[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-[info]   at people.PeopleRegister.adultToChildRatio(PeopleRegisterSpec.scala:93)
-[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$7.apply$mcV$sp(PeopleRegisterSpec.scala:63)
-[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$7.apply(PeopleRegisterSpec.scala:63)
-[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$7.apply(PeopleRegisterSpec.scala:63)
-[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
-[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
-[info]   ...
-[info] - should calculate the average age *** FAILED ***
-[info]   scala.NotImplementedError: an implementation is missing
-[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-[info]   at people.PeopleRegister.averageAge(PeopleRegisterSpec.scala:95)
-[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$8.apply$mcV$sp(PeopleRegisterSpec.scala:67)
-[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$8.apply(PeopleRegisterSpec.scala:67)
-[info]   at people.RegisterSpec$$anonfun$1$$anonfun$apply$mcV$sp$8.apply(PeopleRegisterSpec.scala:67)
-[info]   at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-[info]   at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
-[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
-[info]   ...
+[info] - should report an adult-to-child ratio of 2
+[info] - should calculate the average age
 [info] - should calculate the median age *** FAILED ***
 [info]   scala.NotImplementedError: an implementation is missing
 [info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)

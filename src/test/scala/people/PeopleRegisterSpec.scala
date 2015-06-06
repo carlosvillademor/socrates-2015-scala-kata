@@ -80,9 +80,16 @@ class PeopleRegister(people: Seq[Person]) {
   def count(): Int = people.size
   
   def oldestPerson(): Person = people.maxBy(_.age)
-  
-  def commonestName(): String = people.groupBy(_.name).mapValues(_.size).maxBy(_._2)._1
-  
+
+  case class NameWithFrequency(name: String, frequency: Int)
+
+  def commonestName(): String = people
+    .groupBy(_.name)
+    .mapValues(_.size)
+    .map(NameWithFrequency.tupled)
+    .maxBy(_.frequency).name
+
+
   def youngestCalled(sought: String): Option[Int] = people.filter(_.name == sought) match {
     case Nil => None
     case peopleByName => Option(peopleByName.minBy(_.age).age)
@@ -90,14 +97,17 @@ class PeopleRegister(people: Seq[Person]) {
   
   def countOfChildren(): Int = people.count(_.age <= 18)
   
-  def adultToChildRatio(): Float = people.count(_.age >= 18)/people.count(_.age <= 18)
+  def adultToChildRatio(): Float = {
+    val (adults, children) = people.partition(_.age >= 18)
+    adults.size / children.size.toFloat
+  }
   
-  def averageAge(): Int = people.map(person => person.age).sum/people.size
+  def averageAge(): Int = people.map(_.age).sum/people.size
 
   def medianAge(): Double = {
-    val SortedAges: Seq[Int] = people.map(person => person.age).sorted
+    val SortedAges: Seq[Int] = people.map(_.age).sorted
     val peopleSize: Int = people.size
-    SortedAges.size % 2 match {
+    peopleSize % 2 match {
       case 0 =>
         (SortedAges.apply(peopleSize/2-1) + SortedAges.apply(peopleSize/2))/2.toDouble
       case 1 => SortedAges.apply(peopleSize/2)

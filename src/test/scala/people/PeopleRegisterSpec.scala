@@ -94,10 +94,14 @@ class PeopleRegister(people: Seq[Person]) {
   
   def averageAge(): Int = people.map(person => person.age).sum/people.size
 
-  def medianAge(): Double = people.map(person => person.age).sorted.size%2 match {
-    case 0 => (people.map(person => person.age).sorted.apply(people.size/2-1) +
-              people.map(person => person.age).sorted.apply(people.size/2))/2.toDouble
-    case 1 => people.map(person => person.age).sorted.apply(people.size/2)
+  def medianAge(): Double = {
+    val SortedAges: Seq[Int] = people.map(person => person.age).sorted
+    val peopleSize: Int = people.size
+    SortedAges.size % 2 match {
+      case 0 =>
+        (SortedAges.apply(peopleSize/2-1) + SortedAges.apply(peopleSize/2))/2.toDouble
+      case 1 => SortedAges.apply(peopleSize/2)
+    }
   }
   
 }

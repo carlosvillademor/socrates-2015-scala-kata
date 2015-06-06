@@ -94,7 +94,11 @@ class PeopleRegister(people: Seq[Person]) {
   
   def averageAge(): Int = people.map(person => person.age).sum/people.size
 
-  def medianAge(): Double = ???
+  def medianAge(): Double = people.map(person => person.age).sorted.size%2 match {
+    case 0 => (people.map(person => person.age).sorted.apply(people.size/2-1) +
+              people.map(person => person.age).sorted.apply(people.size/2))/2.toDouble
+    case 1 => people.map(person => person.age).sorted.apply(people.size/2)
+  }
   
 }
 

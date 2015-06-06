@@ -88,7 +88,7 @@ class PeopleRegister(people: Seq[Person]) {
     case peopleByName => Option(peopleByName.minBy(_.age).age)
   }
   
-  def countOfChildren(): Int = ???
+  def countOfChildren(): Int = people.filter(_.age<=18).size
   
   def adultToChildRatio(): Float = ???
   

@@ -35,8 +35,8 @@ Wally 28
 
     val register = PeopleRegister.parse(people)
     
-    it("should report twenty-four people") {(
-      register.count should be(24))
+    it("should report twenty-four people") {
+      register.count should be(24)
     }
     
     it("should say that Dave is the oldest") {
@@ -88,9 +88,9 @@ class PeopleRegister(people: Seq[Person]) {
     case peopleByName => Option(peopleByName.minBy(_.age).age)
   }
   
-  def countOfChildren(): Int = people.filter(_.age<=18).size
+  def countOfChildren(): Int = people.count(_.age <= 18)
   
-  def adultToChildRatio(): Float = people.filter(_.age>=18).size/people.filter(_.age<=18).size
+  def adultToChildRatio(): Float = people.count(_.age >= 18)/people.count(_.age <= 18)
   
   def averageAge(): Int = people.map(person => person.age).sum/people.size
 
